@@ -4,10 +4,13 @@ Welcome to my lab report page! Nothing to see here at the moment.... :<
 # **Currently Jamming Out To**
 
 ## Preacher's Daughter by Ethel Cain
-![Image](https://optimise2.assets-servd.host/best-fit/production/albums/Ethel-Cain-Preachers-Daughter-artwork.jpg?w=1800&q=100&auto=format&fit=crop&dm=1652313614&s=c9f2498e9404ad6000640ba07b679dd6)
+![Image](https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Preachers_daughter_ethel_cain.png/220px-Preachers_daughter_ethel_cain.png)
 
 ## Evermore by Taylor Swift
+![Image](https://upload.wikimedia.org/wikipedia/en/0/0a/Taylor_Swift_-_Evermore.png)
 
 ## Punisher by Phoebe Bridgers
+![Image](https://upload.wikimedia.org/wikipedia/en/2/23/Phoebe_Bridgers_Punisher_%282020%29.png)
 
 ## Pure Heroine by Lorde
+![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lorde_Pure_Heroine.png/1024px-Lorde_Pure_Heroine.png)
