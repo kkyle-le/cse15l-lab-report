@@ -13,4 +13,4 @@ Welcome to my lab report page! Nothing to see here at the moment.... :<
 ![Image](https://upload.wikimedia.org/wikipedia/en/2/23/Phoebe_Bridgers_Punisher_%282020%29.png)
 
 ## Pure Heroine by Lorde
-![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lorde_Pure_Heroine.png/1024px-Lorde_Pure_Heroine.png)
+![Image](https://static.fnac-static.com/multimedia/Images/PT/NR/8b/16/0b/726667/1540-1/tsp20160814201503/Pure-Heroine.jpg)
