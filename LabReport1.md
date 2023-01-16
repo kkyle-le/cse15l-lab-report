@@ -1,3 +1,4 @@
+# Lab Report 1
 # Installing Visual Studio Code (VSC)
 Go to https://code.visualstudio.com/ and follow the instructions for installing Visual Studio Code onto your specific device. Open it once done, it should look something like the image below. **Note: I have previously used VSC before, therefore there are already items loaded, but the basic window layout should look similar**
 ![image](https://user-images.githubusercontent.com/122570961/212625408-ffe656cb-527e-474d-b2c7-98d7e7ad7e2d.png)
