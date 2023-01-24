@@ -57,7 +57,7 @@ It's time to test out the remote computer! Since this remote computer is not hou
 Here are what some commands ran through the terminal could output (slightly different for each account)
 ![image](https://user-images.githubusercontent.com/122570961/212632165-7de891b6-0431-41b9-88cf-afacf2b8047b.png)
 
-The commands I used in the particular screen shot above were `ls -a` and `ls -lat`. They are extremely useful as they are the like the file explorer on the local computer (for a windows OS). I usually gravitate towards using `ls -lat` over the other as it shows files in a vertical view from newest to oldest which makes it easier to find files recently copied from the local computer to the remote computer. 
+The commands I used in the particular screen shot above were `ls -a` and `ls -lat`. They are extremely useful as they are the like the file explorer on the local computer (for a windows OS) and will assist you when navigating through the remote computer without the visual representation of the file system like what the local computer has. I usually gravitate towards using `ls -lat` over the other as it shows files in a vertical view from newest to oldest which makes it easier to find files recently copied from the local computer to the remote computer. 
 
 # Exiting the Remote Terminal
 
