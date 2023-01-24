@@ -1,12 +1,12 @@
 # Lab Report 1
 # Installing Visual Studio Code (VSC)
-Go to https://code.visualstudio.com/ and follow the instructions for installing Visual Studio Code onto your specific device. Open it once done, it should look something like the image below. **Note: I have previously used VSC before, therefore there are already items loaded, but the basic window layout should look similar**
+Go to <https://code.visualstudio.com/> and follow the instructions for installing Visual Studio Code onto your specific device. Open it once done, it should look something like the image below. **Note: I have previously used VSC before, therefore there are already items loaded, but the basic window layout should look similar**
 ![image](https://user-images.githubusercontent.com/122570961/212625408-ffe656cb-527e-474d-b2c7-98d7e7ad7e2d.png)
 
 
 
 # Github Installation and the Git Bash Terminal
-Then go to https://www.github.com and follow the instructions for installing Github. This will be used to transfer code and files onto the remote computer. Once completed, go back to the VSC window and in the top left click Terminal > New Terminal.
+Then go to <https://www.github.com> and follow the instructions for installing Github. This will be used to transfer code and files onto the remote computer. Once completed, go back to the VSC window and in the top left click Terminal > New Terminal.
 ![image](https://user-images.githubusercontent.com/122570961/212626230-ec721f39-71e3-4c89-9e67-1eee8d6856fc.png)
 
 This should now appear at the bottom of the window.
@@ -32,7 +32,7 @@ Once pasted in, press enter. A yes/no question should prompt up in the terminal,
 
 *The yes/no question from the previous step has been omitted, it usually only pops up for users first accessing their account*
 
-Now, type in the password associated wth your cs15lwi23 account and press enter. If you do not know the password, you can reset it at https://sdacs.ucsd.edu/cgi-bin/alloc-query but please allow 15 minutes to pass before attempting to acces the remote computer after resetting.
+Now, type in the password associated wth your cs15lwi23 account and press enter. If you do not know the password, you can reset it at <https://sdacs.ucsd.edu/cgi-bin/alloc-query> but please allow 15 minutes to pass before attempting to acces the remote computer after resetting.
 
 **IMPORTANT: YOU WILL NOT SEE WHAT YOU ARE TYPING WHEN ENTERING YOUR PASSWORD IN THE TERMINAL. THIS IS A SAFETY FEATURE.**
 
@@ -56,6 +56,8 @@ It's time to test out the remote computer! Since this remote computer is not hou
 
 Here are what some commands ran through the terminal could output (slightly different for each account)
 ![image](https://user-images.githubusercontent.com/122570961/212632165-7de891b6-0431-41b9-88cf-afacf2b8047b.png)
+
+The commands I used in the particular screen shot above were `ls -a` and `ls -lat`. They are extremely useful as they are the like the file explorer on the local computer (for a windows OS). I usually gravitate towards using `ls -lat` over the other as it shows files in a vertical view from newest to oldest which makes it easier to find files recently copied from the local computer to the remote computer. 
 
 # Exiting the Remote Terminal
 
