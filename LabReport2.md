@@ -104,7 +104,7 @@ This expectation is foritfied when 123 is passed through. Even though it is an i
 
 In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
 
-### A failure inducing bug input that was found was ###
+**A failure inducing bug input that was found was**
 ```java
 @Test
   public void testAverageWithoutLowest() {
@@ -113,7 +113,7 @@ In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
   } 
 ```
 
-### An input that did not demonstrate the bug was ###
+**An input that did not demonstrate the bug was**
 ```java
 @Test
   public void testAverageWithoutLowest() {
@@ -122,14 +122,14 @@ In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
   } 
 ```
 
-### Symptom | The test running (combined the two tests) ###
+**Symptom | The test running (combined the two tests)**
 ![image](https://user-images.githubusercontent.com/122570961/215352375-a7f4d3e2-3567-442a-ac36-854cc2a980da.png)
 
-### Bug | Fixing the Code ###
+**Bug | Fixing the Code**
 
 *Please note that the expected implementation of this method was not clear nor was it explained in lab when personally questioned. I took the route with the assumption that the implementation of this method removes ALL occurences of the lowest value. If the method was to only remove the first occurence of the lowest value, the implementation will be different.*
 
-### Original Code ###
+**Original Code**
 ``` java
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -145,7 +145,7 @@ In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
   }
   ```
   
-### Debugged Code ###
+**Debugged Code**
   
 I added a number counter `numOcc` for the number of times the lowest vaue occures within a given array. This is then subtracted from the total length of the array. The original code had it where the code assumed that the lowest value will only appear once in the array, and therefore only subtracted 1 from the array length. This resulted in the mean calculation being incorrect as the denominator did not reflect how many values were being summed in the mean.
   ```java
