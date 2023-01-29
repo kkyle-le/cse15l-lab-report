@@ -94,7 +94,9 @@ This method is a helper method as it allows for the code to me condensed down an
 
 It is expected that all inputs after the ?s= should be able to be displayed on the page, as they are all typecasted into a String object as seen in the code line below. 
 
-` String[] parameters = url.getQuery().split("="); `
+``` java
+String[] parameters = url.getQuery().split("="); 
+```
 
 This expectation is foritfied when 123 is passed through. Even though it is an int, it is typecasted into a string and therefore is printed correctly after the two previous entries.
 
