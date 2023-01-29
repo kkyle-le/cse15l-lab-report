@@ -122,10 +122,10 @@ In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
   } 
 ```
 
-**Symptom | The test running (combined the two tests)**
+**Symptom -- The test running (combined the two tests)**
 ![image](https://user-images.githubusercontent.com/122570961/215352375-a7f4d3e2-3567-442a-ac36-854cc2a980da.png)
 
-**Bug | Fixing the Code**
+**Bug -- Fixing the Code**
 
 *Please note that the expected implementation of this method was not clear nor was it explained in lab when personally questioned. I took the route with the assumption that the implementation of this method removes ALL occurences of the lowest value. If the method was to only remove the first occurence of the lowest value, the implementation will be different.*
 
