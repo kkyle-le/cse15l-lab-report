@@ -145,7 +145,7 @@ In Lab 3, I focused on the array method: `averageWithoutLowest(double[] arr)`
   }
   ```
   
-  ### Debugged Code ###
+### Debugged Code ###
   
 I added a number counter `numOcc` for the number of times the lowest vaue occures within a given array. This is then subtracted from the total length of the array. The original code had it where the code assumed that the lowest value will only appear once in the array, and therefore only subtracted 1 from the array length. This resulted in the mean calculation being incorrect as the denominator did not reflect how many values were being summed in the mean.
   ```java
@@ -169,6 +169,6 @@ I added a number counter `numOcc` for the number of times the lowest vaue occure
   }
   ```
   
-  # Reflection Part 3 #
+# Reflection Part 3 #
   
-  Coming out of both Lab 2 and 3, I learned the importance of testing ones code to full correctness. Lab 3 was the main focuse of this lesson as it made me create thorough testers to check for any and all possible inputs that might return something that was not expected. While Lab 2 did not have testign as its primary task, it allowed me to apply the skills learned in Lab 3 into actual use as I had to think of unusual inputs to ensure my code works as expected. It is important that the code is fully correct up to my limited knowledge as these two labs helped enforce this habit of code testing.
+Coming out of both Lab 2 and 3, I learned the importance of testing ones code to full correctness. Lab 3 was the main focuse of this lesson as it made me create thorough testers to check for any and all possible inputs that might return something that was not expected. While Lab 2 did not have testign as its primary task, it allowed me to apply the skills learned in Lab 3 into actual use as I had to think of unusual inputs to ensure my code works as expected. It is important that the code is fully correct up to my limited knowledge as these two labs helped enforce this habit of code testing.
