@@ -1,4 +1,4 @@
-# StringServer.java Code | Part 1#
+# StringServer.java Code | Part 1 #
 ``` java
 import java.io.IOException;
 import java.net.URI;
