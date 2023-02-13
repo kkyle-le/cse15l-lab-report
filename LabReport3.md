@@ -171,8 +171,10 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 ```
 
 ## `grep -i`
-This grep option is similar to `-w`, with the only difference being that it is not case sensitive and will output all files with the exact match string excluding casing (i.e "the" and "The" in their respective files will both be returned). This allows for more flexibility and throuough range when looking for a specific word.
+This grep option is similar to `-w` with the only difference being that `-i` is not case sensitive and will output all files with the exact match string excluding casing (i.e "the" and "The" in their respective files will both be returned). This allows for more flexibility and throuough range when looking for a specific word.
+
 ### Example 1 (Flexibility)
+This example demonstrates how
 ```sh
 kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -r -l "APPLE" written_2/
@@ -212,6 +214,8 @@ written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
 ```
 
 ### Example 2 (Scope Compared to `-i`)
+This examples demonstrates the different search processes of `-w` and `-i` and how they handle cases.
+
 ```sh
 kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -r -l -w "Olives" written_2/
@@ -243,4 +247,4 @@ written_2/travel_guides/berlitz2/Portugal-History.txt
 ```
 
 # Source Used:
-## https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+## <https://www.geeksforgeeks.org/grep-command-in-unixlinux/>
