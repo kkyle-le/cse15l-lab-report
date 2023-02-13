@@ -172,5 +172,75 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 
 ## `grep -i`
 This grep option is similar to `-w`, with the only difference being that it is not case sensitive and will output all files with the exact match string excluding casing (i.e "the" and "The" in their respective files will both be returned). This allows for more flexibility and throuough range when looking for a specific word.
-### Example 1
-### Example 2
+### Example 1 (Flexibility)
+```sh
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l "APPLE" written_2/
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -i "APPLE" written_2/
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HandRJamaica.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToJamaica.txt
+written_2/travel_guides/berlitz1/WhatToJapan.txt
+written_2/travel_guides/berlitz1/WhereToFrance.txt
+written_2/travel_guides/berlitz1/WhereToFWI.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToIstanbul.txt
+written_2/travel_guides/berlitz1/WhereToMadeira.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+```
+
+### Example 2 (Scope Compared to `-i`)
+```sh
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -w "Olives" written_2/
+written_2/travel_guides/berlitz1/IntroGreek.txt
+written_2/travel_guides/berlitz1/IntroIsrael.txt
+written_2/travel_guides/berlitz1/WhatToGreek.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -i "Olives" written_2/
+written_2/travel_guides/berlitz1/HistoryFrance.txt
+written_2/travel_guides/berlitz1/IntroGreek.txt
+written_2/travel_guides/berlitz1/IntroIsrael.txt
+written_2/travel_guides/berlitz1/WhatToGreek.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToIstanbul.txt
+written_2/travel_guides/berlitz1/WhereToGreek.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
+written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+```
+
+# Source Used:
+## https://www.geeksforgeeks.org/grep-command-in-unixlinux/
