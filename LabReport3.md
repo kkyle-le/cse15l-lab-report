@@ -1,4 +1,4 @@
-# `-grep` | Lab Report 3
+# `grep` | Lab Report 3
 
 ## `grep -l`
 When knowing the contents of particular files being searched for is not as important as knowing its directory, using the `-l` option can be extremely helpful in condensing output information and removing clutter in the output terminal. This comes especially in handy as it skips the need to use the find command in tandem with grep and therefore makes searching for a particular directory to a file more efficient.
@@ -33,7 +33,7 @@ written_2/travel_guides/berlitz1/WhereToItaly.txt
 It is important to reiterate that the grep commands looks for the existence of the requested "string" in the contents, and does not search the file names for the string as seen in none of the output directories contains the string "Athens" in their file names.
 
 ## `grep -r` 
-When trying to search for a string and the directory range is unknown, using `-r` is powerful as it utilizes recusrive search similar to the find command when trying to find a file. The following examples uses the `-l` command above in order to make the outputs more readable (the same is applied for all examples beyond).
+When trying to search for a string and the directory range is unknown, using `-r` is powerful as it utilizes recusrive search similar to the find command when trying to find a file without ever needing to know the absolute directory. The following examples uses the `-l` command above in order to make the outputs more readable (the same is applied for all examples beyond).
 
 ### Example 1 (Fast Search w/ Known Directory)
 ```sh
@@ -75,7 +75,7 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 
 ## `grep -w`
 
-The standard grep function will look for every occurance of the search string in every form. So it will return files that contains "son" but also files that contains "person" but no instance of "son". To take into account of this, the `-w` option which functions as "exact match". The following examples demonstrate the different output when the exact same commands are ran with the difference of `-w` being in the second command.
+The standard grep function will look for every occurance of the search string in every form. So it will return files that contains "son" but also files that contains "person" but no instance of "son". To take into account of this, the `-w` option which functions as "exact match" which is useful when trying to find a specific string in a sea of files. The following examples demonstrate the different output when the exact same commands are ran with the difference of `-w` being in the second command.
 
 ### Example 1 (No exact match)
  ```sh
@@ -172,5 +172,74 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 
 ## `grep -i`
 This grep option is similar to `-w`, with the only difference being that it is not case sensitive and will output all files with the exact match string excluding casing (i.e "the" and "The" in their respective files will both be returned). This allows for more flexibility and throuough range when looking for a specific word.
-### Example 1
-### Example 2
+
+### Example 1 (Flexibility)
+This example demonstrates how `-i` allows flexibility when finding strings by not being case sensitive.
+```sh
+$ grep -r -l "APPLE" written_2/
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -i "APPLE" written_2/
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HandRJamaica.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToJamaica.txt
+written_2/travel_guides/berlitz1/WhatToJapan.txt
+written_2/travel_guides/berlitz1/WhereToFrance.txt
+written_2/travel_guides/berlitz1/WhereToFWI.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToIstanbul.txt
+written_2/travel_guides/berlitz1/WhereToMadeira.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+```
+
+### Example 2 (Scope compared to `-w`)
+This example demonstrates the different scopes of `-w` and `-i`
+```sh
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -w "Olives" written_2/
+written_2/travel_guides/berlitz1/IntroGreek.txt
+written_2/travel_guides/berlitz1/IntroIsrael.txt
+written_2/travel_guides/berlitz1/WhatToGreek.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r -l -i "Olives" written_2/
+written_2/travel_guides/berlitz1/HistoryFrance.txt
+written_2/travel_guides/berlitz1/IntroGreek.txt
+written_2/travel_guides/berlitz1/IntroIsrael.txt
+written_2/travel_guides/berlitz1/WhatToGreek.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToIstanbul.txt
+written_2/travel_guides/berlitz1/WhereToGreek.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
+written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+```
