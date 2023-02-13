@@ -174,7 +174,7 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 This grep option is similar to `-w` with the only difference being that `-i` is not case sensitive and will output all files with the exact match string excluding casing (i.e "the" and "The" in their respective files will both be returned). This allows for more flexibility and throuough range when looking for a specific word.
 
 ### Example 1 (Flexibility)
-This example demonstrates how
+This example demonstrates how `-i` allows for more flexibility in search as it does not take into account casing for an input string to search for.
 ```sh
 kkylele@DESKTOP-OE6MSVS MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -r -l "APPLE" written_2/
