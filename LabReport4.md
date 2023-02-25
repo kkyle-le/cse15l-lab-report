@@ -40,6 +40,7 @@ Keys (Editing): `<Ctrl-W> "return" <enter><up><up><right><right><right><right><r
 It is possibe to brute force and move the cursor down all the way to the position where you want but that will be too inefficient. Since I see where the error in the code is, I can use the `Ctrl-W` function to find a unique keyword to get there as quick as possible. Since the line of error is near the return statement, I used the keyword "return" to get there as soon as possible. Not using unique keywords may result in your cursor being moved to the first occurance rather than the position you want to be at. Now that the cursor is near the place I want to be, I will manually go to the position I want (using less keys) and edit the code to fix the program (fixing the infinite loop).
 
 Keys (Saving): `<Ctrl-O><enter><Ctrl-X>`
+
 ![image](https://user-images.githubusercontent.com/122570961/221377147-99fddd16-a2eb-4a13-9334-1b6a46941433.png)
 
 The bottom section is a legend of commands, pretty straight forward using the saving and exiting commnads. After doing the `Ctrl-O` command, it will confirm that the file has been saved.
@@ -64,6 +65,7 @@ Keys (Commit): `"git commit -m "yay done w lab!"<enter>`
 Command to commit, important to include a message! It will not allow you to go through with committing without a commit message.
 
 Keys (Push): `"git push"<enter>`
+
 ![image](https://user-images.githubusercontent.com/122570961/221379900-8029b1ca-05ad-4a0b-9611-d23c0c4e6009.png)
 ![image](https://user-images.githubusercontent.com/122570961/221377468-0601cfb1-264d-46c8-87a0-137fa0b04ef8.png)
 
