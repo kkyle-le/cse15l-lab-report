@@ -37,7 +37,7 @@ It is possibe to brute force and move the cursor down all the way to the positio
 ## Keys (Saving): `<Ctrl-O><enter><Ctrl-X>`
 ![image](https://user-images.githubusercontent.com/122570961/221377147-99fddd16-a2eb-4a13-9334-1b6a46941433.png)
 
-The bottom section is a legend of commands, pretty straight forward using the saving and exiting commnads. After doing the `Ctrl-O` command, it will confirm that the file has been saved.
+The bottom section is a legend of commands, pretty straight forward using the saving and exiting commnads. After doing the `Ctrl-O` command, it will confirm that the file has been saved. doing `Ctrl-X` will exit out of the file editor.
 
 # 8. Re-Running tests, successful now
 ## Keys: `<up><up><enter><up><up><up><enter>`
