@@ -1,4 +1,4 @@
-(Steps 1-3 completed off screen. Keys in quotes are simple typing, especially when specified with (typed))
+(Steps 1-3 completed off screen. Keys in quotes are simple typing)
 # 4. Logging into ieng6
 ## Keys: `<up><enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221375774-f06f7710-db74-416a-b45f-0dd2dd0317fc.png)
@@ -13,7 +13,7 @@
   There is no other *reasonable* shortcut to type "git clone" that would save time beyond just typing "git clone ". I already had the ssh url (`git@github.com:kkyle-le/lab7.git`) for the forked repository to clone, therefore a simple left-click will paste what has been copied to my clipboard. Pressing enter will run the command. I quickly changed diretory to lab7/ through typing it out. I did not need to type the whole directory name out as since it is the only directory starting with the character "l", I could press the tab key and it will autofill in the rest of the `lab7/` directory.
   
  # 6. Run the tests, demonstrating that they fail
- ## Keys: `<Ctrl-R> "javac" <enter><Ctrl-R> "java (typed)" <enter>`
+ ## Keys: `<Ctrl-R> "javac" <enter><Ctrl-R> "java " <enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221376554-c9a8f3ca-1f84-4a81-8f48-232904eccd22.png)
 ![image](https://user-images.githubusercontent.com/122570961/221376626-9fe2be07-8c5a-47a5-bcfd-64ee8a6c5a31.png)
 ![image](https://user-images.githubusercontent.com/122570961/221376638-d7bf180e-9caf-4f0e-86bc-4b7ea1c7abcb.png)
@@ -21,7 +21,7 @@
  The first approach when it came to mind was using the up keys to find the respective `javac` and `java` commands but that would have resulted in me pressing the key more than 15+ times. Therefore a more efficient approach would be to use the `Ctrl-r` keybind to search through my cmd history using a keyword. Using the keyword "javac " gave me the whole javac command for JUnit while doing "java " gave me the java run command. It is important to include the space in the "java" keyword as it will only give you the run commands rather than the compile commands. Hitting enter after finding the command will run the command.
  
  # 7. Edit the code file to fix the failing test
- ## Keys (Open in terminal editor): `"nano " (typed) "L" <tab> "." "j" <tab><enter>`
+ ## Keys (Open in terminal editor): `"nano " "L" <tab> "." "j" <tab><enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221376921-7c8eb79f-23a2-43df-a124-16b69acd623b.png)
 ![image](https://user-images.githubusercontent.com/122570961/221376935-e1b4c1b7-836d-43f8-8bf2-e46a6606e56c.png)
 
