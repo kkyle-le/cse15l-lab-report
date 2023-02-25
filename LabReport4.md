@@ -51,14 +51,12 @@ The bottom section is a legend of commands, pretty straight forward using the sa
 
 To add the changes in the updated file to the committed files to be pushed, running the "git add" command followed by the filename will do. Again, using the tab autocomplete will speed the process up faster as you do not need to input the entire filename (ListExamples.java)
 
-## Keys (Commit): `"git commit -m "yay done w lab!"<enter>`
+## Keys (Commit and Push): `"git commit -m "yay done w lab!"<enter> "git push"<enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221377496-40f52952-55d2-40a1-be9e-4c601f611385.png)
 
 Command to commit, important to include a message! It will not allow you to go through with committing without a commit message.
 
-## Keys (Push): `"git push"<enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221379900-8029b1ca-05ad-4a0b-9611-d23c0c4e6009.png)
-
 ![image](https://user-images.githubusercontent.com/122570961/221377468-0601cfb1-264d-46c8-87a0-137fa0b04ef8.png)
 
 Last simple command, `git push` will push all files to the repository, as seen in the screenshot it was sucessful since we can see the message inputted in the commit command.
