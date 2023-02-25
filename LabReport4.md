@@ -2,11 +2,12 @@
 # 4. Logging into ieng6
 
 Keys: `<up><enter>`
+
 ![image](https://user-images.githubusercontent.com/122570961/221375774-f06f7710-db74-416a-b45f-0dd2dd0317fc.png)
   
   I was able to skip manually typing in the ssh [username] command since the typed command (which was the most recent command on the local computer's scope) was already in my command history, so pressing the up key retrieved that command and I was able to enter immediately. To log in usually required a password but this computer that the lab is being tested on already has a ssh_key attached to the ieng6 account therefore it recognizes that this is an authorized computer and does not require a password to log in, saving me from manually typing in the password.
  
- # 5. Cloning repository
+# 5. Cloning repository
  
 Keys: `"git clone "<left click><enter>"cd l"<tab><enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221376209-1f02fcc3-c9de-4e70-95d9-a7a9ceda811b.png)
@@ -14,7 +15,7 @@ Keys: `"git clone "<left click><enter>"cd l"<tab><enter>`
   
   There is no other *reasonable* shortcut to type "git clone" that would save time beyond just typing "git clone ". I already had the ssh url (`git@github.com:kkyle-le/lab7.git`) for the forked repository to clone, therefore a simple left-click will paste what has been copied to my clipboard. Pressing enter will run the command. I quickly changed diretory to lab7/ through typing it out. I did not need to type the whole directory name out as since it is the only directory starting with the character "l", I could press the tab key and it will autofill in the rest of the `lab7/` directory.
   
- # 6. Run the tests, demonstrating that they fail
+# 6. Run the tests, demonstrating that they fail
 
 Keys: `<Ctrl-R> "javac" <enter><Ctrl-R> "java " <enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221376554-c9a8f3ca-1f84-4a81-8f48-232904eccd22.png)
@@ -23,7 +24,7 @@ Keys: `<Ctrl-R> "javac" <enter><Ctrl-R> "java " <enter>`
  
  The first approach when it came to mind was using the up keys to find the respective `javac` and `java` commands but that would have resulted in me pressing the key more than 15+ times. Therefore a more efficient approach would be to use the `Ctrl-r` keybind to search through my cmd history using a keyword. Using the keyword "javac " gave me the whole javac command for JUnit while doing "java " gave me the java run command. It is important to include the space in the "java" keyword as it will only give you the run commands rather than the compile commands. Hitting enter after finding the command will run the command.
  
- # 7. Edit the code file to fix the failing test
+# 7. Edit the code file to fix the failing test
 
 Keys (Open in terminal editor): `"nano " "L" <tab> "." "j" <tab><enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221376921-7c8eb79f-23a2-43df-a124-16b69acd623b.png)
