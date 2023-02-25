@@ -46,16 +46,17 @@ The bottom section is a legend of commands, pretty straight forward using the sa
  The same procedure for the compile and run commands as step 6. However since I recently ran those commands, I can use just the up keys to scroll through my history to get these respective commands as they only need 2-4 key pressess to access them compared to the original 15+ key presses.
 
 # 9. Committing and Pushing
- ## Keys (Add): `"git add " <tab> "." "j" <tab><enter>`
+## Keys (Add): `"git add " <tab> "." "j" <tab><enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221377485-3473a512-67a4-4312-b8b3-1d6edbcc0290.png)
 
 To add the changes in the updated file to the committed files to be pushed, running the "git add" command followed by the filename will do. Again, using the tab autocomplete will speed the process up faster as you do not need to input the entire filename (ListExamples.java)
 
-## Keys (Commit and Push): `"git commit -m "yay done w lab!"<enter> "git push"<enter>`
+## Keys (Commit): `"git commit -m "yay done w lab!"<enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221377496-40f52952-55d2-40a1-be9e-4c601f611385.png)
 
 Command to commit, important to include a message! It will not allow you to go through with committing without a commit message.
 
+## Keys (Push): `"git push"<enter>`
 ![image](https://user-images.githubusercontent.com/122570961/221379900-8029b1ca-05ad-4a0b-9611-d23c0c4e6009.png)
 ![image](https://user-images.githubusercontent.com/122570961/221377468-0601cfb1-264d-46c8-87a0-137fa0b04ef8.png)
 
