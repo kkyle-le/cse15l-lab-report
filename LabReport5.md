@@ -24,5 +24,5 @@
 
 
 # Source Used:
-## [<https://curl.se/docs/manpage.html#-r>](https://curl.se/docs/manpage.html#-r)
-## [<https://www.geeksforgeeks.org/php-curl/>](https://www.geeksforgeeks.org/php-curl/)
+## [<https://curl.se/docs/manpage.html>](https://curl.se/docs/manpage.html)
+## [<https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/>](https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/)
