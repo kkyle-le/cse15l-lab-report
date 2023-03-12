@@ -1,4 +1,4 @@
-# `-curl` | Lab Report 5
+# `curl` | Lab Report 5
 
 ## `curl -o` Copy Into File w/ Custom Name
 
@@ -63,21 +63,72 @@ STORM SURGE, WINDS, AND FLOODING IN THE FLORIDA PENINSULA...
 
 
 ## `curl -O` Copy Into File Using Existing Name
+Similar to `-o`, the option `-O` will copy the contents of a URL and put it into a file for you. The one difference is that `-O` will use the already existig filename of the url's remote server file. This can be useful when you do not care much about a file's name in your system, or when you want to use the file naming system the file author is using, thus you do not need to create an initial file to redirect the `curl` output into.
 
-### Example 1 (Fast Search w/ Known Directory)
-### Example 2 (Fast Search w/o Known Directory)
+URL Used: 
+[<https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.009>](https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.009)
+[<https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.010>](https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.010)
+[<https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.011>](https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.011)
 
+### Example 1 (Single File Download)
+I only need to download one unique file and therefore I am not too worried about the naming scheme as it will be easily identifiable in my working directory.
+```ssh 
+$ curl -O https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.009
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13725  100 13725    0     0  25604      0 --:--:-- --:--:-- --:--:-- 26242
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/testing
+$ ls
+al092022.wndprb.009  hello.txt  robloxworkingcodes.txt
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/testing
+$ cat al092022.wndprb.009 
+ZCZC MIAPWSAT4 ALL
+TTAA00 KNHC DDHHMM
+
+TROPICAL STORM IAN WIND SPEED PROBABILITIES NUMBER   9
+NWS NATIONAL HURRICANE CENTER MIAMI FL       AL092022
+0900 UTC SUN SEP 25 2022
+
+AT 0900Z THE CENTER OF TROPICAL STORM IAN WAS LOCATED NEAR LATITUDE
+14.9 NORTH...LONGITUDE 78.8 WEST WITH MAXIMUM SUSTAINED WINDS NEAR
+45 KTS...50 MPH...85 KM/H.
+[ . . . ]
+```
+
+### Example 2 (Adopting File Naming System)
+The file organizing maning scheme already in place is effective and I do not see a reason to change it, so using `-O` on multiple files will allow me to have the files already organized.
+
+```
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/testing
+$ curl -O -O -O https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.009 https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.010 https://ftp.nhc.noaa.gov/atcf/wndprb/al092022.wndprb.011
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13725  100 13725    0     0  19384      0 --:--:-- --:--:-- --:--:-- 19748
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14709  100 14709    0     0   132k      0 --:--:-- --:--:-- --:--:--  133k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14496  100 14496    0     0   155k      0 --:--:-- --:--:-- --:--:--  155k
+
+kkylele@DESKTOP-OE6MSVS MINGW64 ~/testing
+$ ls
+al092022.wndprb.009  al092022.wndprb.010  al092022.wndprb.011
+```
 
 ## `curl -r` Copy Specific Range
 
-### Example 1 (No exact match)
-### Example 2 (Exact match found)
+### Example 1
+### Example 2
 
 
 ## `curl -`
 
-### Example 1 (Flexibility)
-### Example 2 (Scope Compared to `-i`)
+URL used: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
+### Example 1
+### Example 2
 
 
 # Source Used:
