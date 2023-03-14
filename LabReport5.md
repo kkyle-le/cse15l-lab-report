@@ -199,11 +199,28 @@ NNNN
 ```
 
 ## `curl --max-time`
-Copying over extremely large can take an obscene amount of time to finish.  
-URL used: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
-### Example 1 Timeout
-### Example 2 Partial File Download  
+Copying over extremely large can take an obscene amount of time to finish. When you are unsure about the total time it will take to copy over a file, you can set a time limit for the amount of time beforehand to terminate the copy-over automatically. When the termination occurs, any data copied over will be kept.
 
+URL used: [<http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz>](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz)
+### Example 1 Timeout
+This example demonstrates the time out function. The file itself is big and therefore I do not know how long it will take to copy over all its data (in actuality, it would've taken more than 6 minutes!). Therefore, I set a time limit of 10 seconds which will terminate the `curl` process.
+```ssh
+$ curl -O --max-time 10 http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0  196M    0 1478k    0     0   147k      0  0:22:40  0:00:10  0:22:30  337k
+curl: (28) Operation timed out after 10012 milliseconds with 1513475 out of 205612353 bytes received
+```
+
+### Example 2 Partial File Download  
+Even though the process has terminated, all bytes that was transferred over before termination was saved. This in itself, can come in handy when you want to only transfer over part of a file.
+```
+$ zcat ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
+[. . .]
+1       1|1     0|0     1|1     1|1     1|1     1|0     0|0     0|0     0|0     0|1     0|0     1|0     1|1     1|1     0|1     1|1       0|1     0|0     1|1     0|0     1|0     1|1     0|0     0|0     1|1     1|1     0|0     0|1     0|1     0|1     1|1     0|0       0|0     1|1     0|1     0|1     1|0     0|1     0|1     1|0     1|1     0|0     0|1     1|1     1|1     0|0     0|0     1|1       1|1     1|1     1|1     0|0     0|1     0|1     0|0     0|0     0|0     1|0     0|0     1|1     1|1     1|1     0|0     0|0       1|1     1|0     1|1     0|0     0|0     1|0     1|1     1|1     1|1     0|1     0|0     1|1     0|0     1|0     0|0     1|0       0|0     1|1     0|1     1|1     1|1     1|1     1|1     0|0     1|1     1|1     0|0     0|1     1|1     0|0     0|1     1|1       1|1     1|1     1|1     0|1     0|0     1|0     1|1     1|0     0|0     1|1     0|0     0|1     0|0     1|0     1|1     1|1       0|0     1|1     0|0     0|1     0|0     0|0     1|1     0|0     0|0     0|0     1|0     0|1     0|1     0|0     0|1     1|0       1|0     0|1     1|1     0|1     1|1     1|1     0|0     0|0     1|1     0|0     1|1     1|1     1|1     1|0     0|0     0|1       1|1     0|1     1|1     1|1     1|1     1|1     0|0     1|1     1|0     1|1     1|1     0|0     1|1     1|1     1|1     1|0       1|1     1|1     1|1     1|0     1|1     1|1     1|1     1|1     1|1     1|1     1|1     0|1     1|1     1|1     1|1     1|1       1|1     1|1     0|1     0|0     1|0     1|1     1|0     0|0     1|1     1|1     1|1     1|1     1|0     0|0     1|1     1|1       0|0     1|1     1|1     0|1     1|1     1|1     1|1     1|1     1|1     1|1     1|1     0|0     1|0     1|1     0|0     1|1       1|1     1|1     1|1     0|1     1|1     0|0     0|1     1|1     0|1     1|1     0|1     0|1
+gzip: ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz: unexpected end of file
+```
+Even with the very short time limit, so much data was transferred. I have cut down its output, and retained the very final bit of the transferred file before terminating to maintain readability.
 
 # Source Used:
 ## [<https://curl.se/docs/manpage.html>](https://curl.se/docs/manpage.html)
