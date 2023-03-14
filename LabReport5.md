@@ -222,7 +222,7 @@ gzip: ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
 ```
 Even with the very short time limit, so much data was transferred. I have cut down its output, and retained the very final bit of the transferred file before terminating to maintain readability. 
 
-### DUE TO THE WAY GIT HUB BLOG POSTS ARE FORMATTED WHEN PRINTED, EXTREMELY LONG CODE LINES HAVE BEEN CUT OFF
+### Due to github blog posts not wrapping code block lines, many of the long command lines have been cut off when converted to pdf.
 
 # Source Used:
 ## [<https://curl.se/docs/manpage.html>](https://curl.se/docs/manpage.html)
